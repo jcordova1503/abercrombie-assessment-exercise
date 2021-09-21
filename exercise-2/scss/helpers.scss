@@ -1,0 +1,16 @@
+.d-flex{
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    &.flex-start{
+        justify-content: flex-start;
+    }
+    &.justify-between{
+        justify-content: space-between;
+    }
+}
+
+.error{
+    border: 1px solid red !important;
+}
+

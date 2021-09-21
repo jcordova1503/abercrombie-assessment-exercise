@@ -1,0 +1,17 @@
+@mixin mediaqueries($res) {
+    @if $res==1280max {
+        @media only screen and (max-width: 1280px){
+            @content;
+        }
+    }
+    @if $res==1000max {
+        @media only screen and (max-width: 1000px){
+            @content;
+        }
+    }
+    @if $res==480max {
+        @media only screen and (max-width: 480px){
+            @content;
+        }
+    }
+}

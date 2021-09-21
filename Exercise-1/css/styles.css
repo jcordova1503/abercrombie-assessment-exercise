@@ -1,0 +1,81 @@
+.title{
+    display: block;
+    text-align: center;
+    margin-bottom: 35px;
+    text-transform: uppercase;
+    font-size: 35px;
+}
+
+.users-list{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    align-items: flex-start;
+    list-style: none;
+    padding-left: 0;
+}
+
+.users-list li{
+    margin-bottom: 25px;
+    width: 30%;
+    border: 1px solid black;
+    padding: 15px;
+    text-align: center;
+}
+
+.users-list li .user-avatar{
+    width: 250px;
+    height: 250px;
+    margin: 0 auto 15px;
+}
+
+.users-list li .user-avatar img{
+    width: 100%;
+    height: auto;
+}
+
+.users-list li h2{
+    font-size: 35px;
+    margin-bottom: 25px;
+}
+
+.users-list li button{
+    padding: 15px;
+    color: white;
+    background: #449dc1;
+    font-size: 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.users-list li .hidden{
+    display: none;
+}
+
+/*Small notebook screen*/
+
+@media screen and (max-width: 1280px) {
+    .users-list li{
+        width: 25%;
+        margin: 0 15px 25px;
+    }
+}
+
+/*Tablet css */
+@media screen and (max-width: 1000px) {
+    .users-list{
+        justify-content: center;
+    }
+    .users-list li{
+        width: 40%;
+    }
+}
+
+/*Mobile css */
+
+@media screen and (max-width: 480px) {
+    .users-list li{
+        width: 100%;
+    }
+}

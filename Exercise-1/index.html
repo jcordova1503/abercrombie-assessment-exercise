@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta http-equiv="X-UA-Compatible" content="ie=edge">
+        <title>Abercrombie</title>
+        <link rel="stylesheet" type="text/css" href="css/styles.css">
+    </head>
+    <body>
+        <div id="users-container">
+
+        </div>
+
+        <script id="handlebar" type="text/x-handlebars-template">
+            <h2 class="title"> Abercrombie Users </h2>
+            <ul class="users-list">
+                {{#each this}}
+                    <li>
+                        <div class="user-avatar">
+                            <img src="{{avatar}}" alt="profile-picture"/>
+                        </div>
+                        <h2 class="user-name">{{name}}</h2>
+                        <div id="information" class="hidden">
+                            <p>ID User: {{id}}</p>
+                            <p>Created at: {{createdAt}}</p>
+                        </div>
+                        <button class="more-info">More info</button>
+                    </li>
+                
+                {{/each}}
+            </ul>
+        </script>
+        <script src="js/jquery.js"></script>
+        <script src="js/jquery.mobile.custom.min.js"></script>
+        <script src="js/handlebars-v4.7.7.js"></script>
+        <script src="js/modification.js"></script>
+        <script src="js/main.js"></script>
+    </body>
+</html>
